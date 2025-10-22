@@ -1,131 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Meta tags for SEO -->
-    <meta name="description"
-        content="Mathematics Quiz to test your knowledge! Perfect for casual gamers and enthusiasts">
-    <meta name="keywords"
-        content="quiz, knowledge, games, puzzles, trivia">
-    <title>The Essential Mathematics Quiz</title>
-     <!-- Link to css stylesheet -->
-    <link rel="stylesheet" href="assets/css/app.css">
-    <link rel="stylesheet" href="assets/css/game.css">
-    <!-- Favicon to appear on browser tab // Quiz icon created by Freepik - Flaticon-->
-    <link rel="shortcut icon" href="assets/images/bg-img.png" type="image/x-icon">
-</head>
-
-<body>
-  <!-- Header -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <!-- Header -->
     <header>
-      <!-- Navigation -->
-      <nav>
+        <nav>
             <ul id="menu">
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="game.html">Start Game</a></li>
                 <li><a href="highscores.html">High Scores</a></li>
                 <li><a href="end.html">End Game</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
-      </nav>
+        </nav>
     </header>
-    <!-- Main content -->
-    <div class="container">
-      <div id="home" class="flex-center flex-column">
-        <h1>Quiz Time!</h1> 
-        <a class="btn" href="/game.html">Play</a>
-        <a class="btn" href="/highscores.html">High Scores</a>
-      </div>    
-    </div>  
 
-    <hr>
-    
-    <!-- Game -->
-<div class="container">
-      <div id="loader"></div>
-      <div id="game" class="justify-center flex-column hidden">
-        <div id="hud">
-          <div id="hud-item">
-            <p id="progressText" class="hud-prefix">
-              Question
-            </p>
-            <div id="progressBar">
-              <div id="progressBarFull"></div>
-            </div>
-          </div>
-          <div id="hud-item">
-            <p class="hud-prefix">
-              Score
-            </p>
-            <h1 class="hud-main-text" id="score">
-              0
-            </h1>
-          </div>
-        </div>
-        <h2 id="question"></h2>
-        <div class="choice-container">
-          <p class="choice-prefix">A</p>
-          <p class="choice-text" data-number="1"></p>
-        </div>
-        <div class="choice-container">
-          <p class="choice-prefix">B</p>
-          <p class="choice-text" data-number="2"></p>
-        </div>
-        <div class="choice-container">
-          <p class="choice-prefix">C</p>
-          <p class="choice-text" data-number="3"></p>
-        </div>
-        <div class="choice-container">
-          <p class="choice-prefix">D</p>
-          <p class="choice-text" data-number="4"></p>
-        </div>
-      </div>
-    </div>
-
-    <hr>
-
-    <!-- High score -->
-    <div class="container">
-      <div id="highScores" class="flex-center flex-column">
-        <h1 id="finalScore">High Scores</h1>
-        <ul id="highScoresList"></ul>
-        <a class="btn" href="/">Go Home</a>
-      </div>
-    </div>
-    <hr>
-    <!-- End game -->
-    <div class="container">
-      <div id="end" class="flex-center flex-column">
-        <h1 id="finalScore"></h1>
-        <form>
-          <label for="username">Enter your username:</label>
-          <input
-            type="text"
-            name="username"
-            id="username"
-            placeholder="username"
-          />
-          <button
-            type="submit"
-            class="btn"
-            id="saveScoreBtn"
-            onclick="saveHighScore(event)"
-            disabled
-          >
-            Save
-          </button>
-        </form>
-        <a class="btn" href="/game.html">Play Again</a>
-        <a class="btn" href="/">Go Home</a></a>
-      </div>
-    </div>
-    
-    <hr>
-
-  <!-- Footer / contact section -->
+<!-- Footer / contact section -->
     <!-- mt-auto added to push footer to the bottom of the page -->
     <footer id="contact">
         <div class="container section">
@@ -192,7 +88,6 @@
                 </div>
             </div>
         </div>
-        
         <!-- Feedback -->
         <div style="text-align: center;">    
                 <form>
@@ -216,16 +111,3 @@
   	            </form>
         </div>
     </footer>
-
-    <!-- Font Awesome kit -->
-    <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
-    <!-- Start game script -->
-    <script src="assets/js/game.js"></script>
-    <!-- High score script -->
-    <script src="assets/js/highscores.js"></script>
-    <!-- End game script -->
-    <script src="assets/js/end.js"></script>
-    <!-- Redirect script -->
-    <script src="assets/js/redirector.js"></script>
-</body>
-</html>
