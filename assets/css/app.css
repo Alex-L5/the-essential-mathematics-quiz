@@ -56,7 +56,7 @@ h3 {
     font-size: 2rem;
 }
 
-/* UTILITIES */
+/* Utilities */
 
 .container {
   width: 100vw;
@@ -95,7 +95,7 @@ h3 {
   display: none;
 }
 
-/* BUTTONS */
+/* Buttons */
 .btn {
   font-size: 1.8rem;
   padding: 1rem 0;
@@ -121,7 +121,7 @@ h3 {
   transform: none;
 }
 
-/* FORMS */
+/* Forms */
 form {
   width: 100%;
   display: flex;
